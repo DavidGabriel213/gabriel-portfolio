@@ -516,6 +516,47 @@ footer .footer-copy{font-size:0.78rem;color:#546e7a}
   background:#ede9fe;
   color:#6d28d9;
 }
+  /* ── RESEARCH ──────────────────────────────────────────────── */
+#research{
+  background:#fff;
+}
+.research-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.research-card{
+  background:var(--bg);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:24px;
+  transition:transform 0.2s,box-shadow 0.2s;
+}
+.research-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+.research-icon{
+  width:50px;
+  height:50px;
+  border-radius:14px;
+  background:var(--light);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.5rem;
+  margin-bottom:16px;
+}
+.research-card h3{
+  color:var(--navy);
+  font-size:1rem;
+  margin-bottom:8px;
+}
+.research-card p{
+  color:var(--muted);
+  font-size:0.85rem;
+  line-height:1.7;
+    }
 </style>
 </head>
 <body>
