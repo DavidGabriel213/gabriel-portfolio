@@ -1163,14 +1163,13 @@ footer .footer-copy{font-size:0.78rem;color:#546e7a}
         </div>
       </div>
       <div>
-        <div class="contact-form">
+        <form class="contact-form" action="/contact" method="POST">
           <input type="text" placeholder="Your Name" />
           <input type="email" placeholder="Your Email" />
           <input type="text" placeholder="Subject" />
           <textarea placeholder="Your message..."></textarea>
-          <button type="button" onclick="alert('Message sent! I will get back to you soon 😄')">
-            📬 Send Message
-          </button>
+         <button type="submit">📬 Send Message</button> 
+      
         </div>
       </div>
     </div>
