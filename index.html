@@ -1380,11 +1380,28 @@ footer .footer-copy{font-size:0.78rem;color:#546e7a}
       </div>
       <div>
         <form class="contact-form" action="/contact" method="POST">
-          <input type="text" placeholder="Your Name" />
-          <input type="email" placeholder="Your Email" />
-          <input type="text" placeholder="Subject" />
-          <textarea placeholder="Your message..."></textarea>
-         <button type="submit">📬 Send Message</button> 
+    <input 
+        type="text" 
+        name="name"
+        placeholder="Your Name" 
+        required/>
+    <input 
+        type="email" 
+        name="email"
+        placeholder="Your Email" 
+        required/>
+    <input 
+        type="text" 
+        name="subject"
+        placeholder="Subject" 
+        required/>
+    <textarea 
+        name="message"
+        placeholder="Your message..."
+        required
+    ></textarea>
+    <button type="submit">📬 Send Message</button>
+
         </form>
         </div>
       </div>
