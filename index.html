@@ -492,6 +492,30 @@ footer .footer-copy{font-size:0.78rem;color:#546e7a}
   .projects-grid{grid-template-columns:1fr}
   .skills-grid{grid-template-columns:1fr}
 }
+  /* ── FEATURED RESEARCH PROJECT ─────────────────────────────── */
+.featured-project{
+  border:2px solid var(--accent);
+  box-shadow:0 6px 25px rgba(33,150,243,0.12);
+  position:relative;
+}
+.featured-project::before{
+  content:"FEATURED";
+  position:absolute;
+  top:12px;
+  left:12px;
+  background:var(--blue);
+  color:#fff;
+  font-size:0.65rem;
+  font-weight:800;
+  letter-spacing:0.8px;
+  padding:4px 9px;
+  border-radius:5px;
+  z-index:2;
+}
+.badge-research{
+  background:#ede9fe;
+  color:#6d28d9;
+}
 </style>
 </head>
 <body>
