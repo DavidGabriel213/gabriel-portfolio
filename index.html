@@ -771,6 +771,33 @@ footer .footer-copy{font-size:0.78rem;color:#546e7a}
     color: #7dd3fc;
     text-decoration: underline;
 }
+  /* ── SKILL PILLS ───────────────────────────────────────────── */
+
+.skill-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+}
+
+.skill-pill{
+  display:inline-flex;
+  align-items:center;
+  padding:8px 12px;
+  border-radius:9px;
+  background:var(--light);
+  color:var(--blue);
+  border:1px solid rgba(33,150,243,0.12);
+  font-size:0.82rem;
+  font-weight:600;
+  transition:all 0.2s ease;
+}
+
+.skill-pill:hover{
+  background:var(--blue);
+  color:#fff;
+  transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(21,101,192,0.18);
+}
 }
 </style>
 </head>
