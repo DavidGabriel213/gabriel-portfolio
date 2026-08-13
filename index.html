@@ -191,6 +191,32 @@ nav{
 .stat-num span{color:var(--accent)}
 .stat-label{font-size:0.78rem;color:#78909c;
   text-transform:uppercase;letter-spacing:0.5px;margin-top:2px}
+  /* ── ADDITION 1: HERO BIO ─────────────────────────────────────── */
+.hero-bio-new{
+  font-size:1rem;color:#b0c4d8;line-height:1.9;
+  margin-bottom:22px;
+}
+.hero-bio-new .line{
+  display:flex;align-items:center;gap:10px;
+}
+.hero-bio-new .line::before{
+  content:'';width:18px;height:2px;
+  background:var(--accent);flex-shrink:0;border-radius:2px;
+}
+
+.currently-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(16,185,129,0.12);
+  border:1px solid rgba(16,185,129,0.3);
+  color:#6ee7b7;padding:7px 16px;border-radius:50px;
+  font-size:0.8rem;font-weight:600;margin-bottom:20px;
+}
+.currently-dot{
+  width:7px;height:7px;background:var(--green);
+  border-radius:50%;animation:pulse 1.5s infinite;
+}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+  
 
 /* ── SECTIONS ───────────────────────────────────────────────── */
 section{padding:80px 20px}
@@ -788,6 +814,35 @@ footer .footer-copy{font-size:0.78rem;color:#546e7a}
   transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(21,101,192,0.18);
 }
+  
+/* PLACEMENT LABEL */
+.placement{
+  background:var(--navy);color:#90caf9;
+  padding:10px 18px;border-radius:10px 10px 0 0;
+  font-size:0.78rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:1px;
+  display:flex;align-items:center;gap:8px;
+}
+.placement span{
+  background:rgba(33,150,243,0.2);
+  padding:3px 10px;border-radius:50px;
+  font-size:0.72rem;
+}
+.block{
+  border:2px solid var(--navy);
+  border-top:none;border-radius:0 0 16px 16px;
+  padding:30px;background:#fff;
+  margin-bottom:40px;
+}
+.divider{
+  height:2px;background:linear-gradient(90deg,var(--accent),transparent);
+  margin:40px 0;border-radius:2px;
+}
+h2{font-size:1rem;font-weight:700;color:var(--navy);
+  margin-bottom:6px;text-transform:uppercase;letter-spacing:0.5px}
+p.note{font-size:0.82rem;color:var(--muted);margin-bottom:20px;
+  padding:8px 12px;background:var(--lighter);border-radius:8px;
+  border-left:3px solid var(--accent);}
 }
 </style>
 </head>
