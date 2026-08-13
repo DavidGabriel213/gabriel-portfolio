@@ -706,25 +706,119 @@ footer .footer-copy{font-size:0.78rem;color:#546e7a}
   font-size:0.85rem;
   line-height:1.7;
     }
-  @media(max-width:768px){
-  .hero-photo{
-    width:180px;
-    height:180px;
-    
+  /* ── RESPONSIVE HERO ───────────────────────────── */
+
+@media(max-width:900px){
+
+  /* NAV */
+  .nav-links{
+    display:none;
   }
-    .hero-content{
-  grid-template-columns:1fr;
-  text-align:center;
-  gap:30px;
+
+  .hamburger{
+    display:flex;
+  }
+
+  /* HERO */
+  #hero{
+    min-height:auto;
+    padding:45px 16px 40px;
+  }
+
+  .hero-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:0;
+    width:100%;
+    max-width:520px;
+  }
+
+  /* PHOTO + LOCATION */
+  .hero-left{
+    order:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+    width:100%;
+  }
+
+  .hero-photo{
+    width:175px;
+    height:175px;
+    margin:20px auto 0;
+  }
+
+  .hero-badge{
+    margin-bottom:18px;
+  }
+
+  /* TEXT */
+  .hero-text{
+    order:2;
+    width:100%;
+    text-align:center;
+  }
+
+  .hero-name{
+    font-size:2.5rem;
+    margin-bottom:10px;
+  }
+
+  .hero-typing{
+    margin-bottom:14px;
+  }
+
+  .hero-bio-new{
+    text-align:left;
+    font-size:0.9rem;
+    line-height:1.65;
+  }
+
+  /* BUTTONS */
+  .hero-text .hero-btns{
+    justify-content:center;
+    margin-bottom:28px;
+  }
+
+  /* STATS */
+  .hero-stats{
+    order:3;
+    grid-column:auto;
+    width:100%;
+    margin-top:0;
+    padding-top:24px;
+    justify-content:space-around;
+    gap:10px;
+  }
+
+  .stat-num{
+    font-size:1.45rem;
+  }
+
+  .stat-label{
+    font-size:0.62rem;
+  }
+
+  /* OTHER SECTIONS */
+  .about-grid,
+  .edu-grid,
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .projects-grid,
+  .skills-grid{
+    grid-template-columns:1fr;
+  }
 }
-.hero-text{
-  order:2;
-}
-.hero-photo{
-  order:1;
-}
-}
-  @media(max-width:480px){
+
+
+/* ── SMALL PHONES ─────────────────────────────── */
+
+@media(max-width:480px){
 
   #hero{
     padding:35px 14px 35px;
@@ -733,7 +827,7 @@ footer .footer-copy{font-size:0.78rem;color:#546e7a}
   .hero-photo{
     width:155px;
     height:155px;
-    margin-bottom:18px;
+    margin-top:15px;
   }
 
   .hero-name{
@@ -762,28 +856,9 @@ footer .footer-copy{font-size:0.78rem;color:#546e7a}
     font-size:0.55rem;
   }
 
-  .projects-grid{
-    grid-template-columns:1fr;
-  }
-
+  .projects-grid,
   .skills-grid{
     grid-template-columns:1fr;
-  }
-  }
-@media(max-width:480px){
-
-  #hero{
-    padding:35px 14px 35px;
-  }
-
-  .hero-photo{
-    width:155px;
-    height:155px;
-    margin-bottom:18px;
-  }
-
-  .hero-name{
-    font-size:2.25rem;
   }
   }
   
